@@ -16,7 +16,9 @@ if !(hasInterface) exitWith {};
 #include <..\MACRO.hpp>
 
 private [ "_itemSet", "_backpackCargo", "_itemCargo", "_magazineCargo", "_weaponCargo", "_rank", "_radio_system"];
-params [[ "_rank", T8SME_param_playerRewardSet, [""]],[ "_radio_system", T8SME_param_radio_system, [""]]];
+params [[ "_rank", T8SME_param_playerRewardSet, [""]]];
+
+_radio_system = T8SME_param_radio_system;
 
 switch ( _rank ) do
 {
@@ -29,8 +31,11 @@ _itemCargo		= getArray ( missionConfigFile >> "cfgRandomMissions" >> "missionPla
 _magazineCargo	= getArray ( missionConfigFile >> "cfgRandomMissions" >> "missionPlayerRewards" >> T8SME_param_playerRewardSet >> _itemSet >> "MagazineReward" );
 _weaponCargo	= getArray ( missionConfigFile >> "cfgRandomMissions" >> "missionPlayerRewards" >> T8SME_param_playerRewardSet >> _itemSet >> "WeaponReward" );
 
-if (_radio_system ) then {
-
+if !(_radio_system isEqualTo "None") then {
+	_backpackCargo append (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> _radio_system >> "Backpack");
+	_itemCargo append (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> _radio_system >> "Item");
+	_magazineCargo (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> _radio_system >> "Magazine");
+	_weaponCargo append (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> _radio_system >> "Weapon");
 };
 
 __DEBUG( __FILE__,"T8SME_param_playerRewardSet", T8SME_param_playerRewardSet );

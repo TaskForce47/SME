@@ -109,5 +109,12 @@ class cfgRandomMissions
 	#include <missionFactions.hpp>
 
 	// --------------------------------------------------------------
+	//
+	//	Radio System
+	//
+
+	#include "radio_system.hpp"
+
+	// --------------------------------------------------------------
 	//	END OF CONFIG
 };
