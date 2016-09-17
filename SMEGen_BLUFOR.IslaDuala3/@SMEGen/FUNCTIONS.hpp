@@ -2,12 +2,12 @@
  =======================================================================================================================
 
 	SME.Gen - Small Military Encounter Genenerator
- 
+
 	File:		FUNCTIONS.hpp
 	Author:		T-800a
 	E-Mail:		t-800a@gmx.net
 
-	
+
  =======================================================================================================================
 */
 
@@ -19,23 +19,23 @@
 // {
 
 	class T8SME_INIT
-	{	
+	{
 		class init
 		{
 			file = "@SMEGen\fnc_init";
-			
+
 			addFunctionPre(vars);
 			addFunction(server);
 			addFunction(client);
 		};
 	};
-	
+
 	class T8SME_server
-	{	
+	{
 		class randomMission
 		{
 			file = "@SMEGen\fnc_srv";
-						
+
 			addFunction(blowIED);
 			addFunction(buildUnitArray);
 			addFunction(checkFlatGround);
@@ -83,7 +83,7 @@
 		class client
 		{
 			file = "@SMEGen\fnc_cli";
-			
+
 			addFunction(addActionIntel);
 			addFunction(addDiary);
 			addFunction(checkGetIn);
@@ -97,6 +97,7 @@
 			addFunction(handleVehicle);
 			addFunction(keysAdd);
 			addFunction(keysPress);
+			addFunction(radioinit);
 			addFunction(restricVehicle);
 			addFunction(serviceVehicle);
 			addFunction(updateArsenal);
@@ -109,10 +110,10 @@
 		class revive
 		{
 			file = "@SMEGen\fnc_rev";
-			
+
 			addFunction(INIT);
 			addFunction(playerINIT);
-			
+
 			addFunction(broadcastDeath);
 			addFunction(carry);
 			addFunction(checkCarrying);

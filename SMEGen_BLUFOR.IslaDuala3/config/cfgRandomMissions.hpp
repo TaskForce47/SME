@@ -35,10 +35,10 @@ class cfgRandomMissions
 	// default gear/reward set ( if not overwritten by mission Params )
 	// find in < missionPlayerRewards.hpp > to change
 
-		playerRewardSet				= "vanilla_fullArsenal";
+		playerRewardSet						= "vanilla_fullArsenal";
 
 	// missions "won" needed for new vehicle
-		serverRewardSuccesses	= 3;
+		serverRewardSuccesses	= 99;
 
 	// amount of spawned mission AOs
 		spawnedSitesCount			= 2;
