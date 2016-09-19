@@ -974,6 +974,108 @@ class IslaDuala3 : base_map
   marker = "site_town_kimbaka";
   position[] = { 8062.52, 1689.58, 0 };
   };
+  class field_lapoto_N : base_field
+  {
+  scope = 1;
+  name = "N of Lapoto";
+  marker = "site_field_lapoto_N";
+  position[] = { 4020.52, 9837.31, 0 };
+  };
 
+  class field_polani_W : base_field
+  {
+  scope = 1;
+  name = "W of Polani";
+  marker = "site_field_polani_W";
+  position[] = { 5951.4, 9719.88, 0 };
+  };
+
+  class field_tarisisland_SSE : base_field
+  {
+  scope = 1;
+  name = "SSE of Taris Island";
+  marker = "site_field_tarisisland_SSE";
+  position[] = { 3619.26, 8894.25, 0 };
+  };
+
+  class field_hazenavulcano_NNE : base_field
+  {
+  scope = 1;
+  name = "NNE of Hazena Vulcano";
+  marker = "site_field_hazenavulcano_NNE";
+  position[] = { 2451.04, 8743.27, 0 };
+  };
+
+  class field_saria_W : base_field
+  {
+  scope = 1;
+  name = "W of Saria";
+  marker = "site_field_saria_W";
+  position[] = { 988.452, 7042.68, 0 };
+  };
+
+  class field_maluri_E : base_field
+  {
+  scope = 1;
+  name = "E of Maluri";
+  marker = "site_field_maluri_E";
+  position[] = { 7405.45, 7573.78, 0 };
+  };
+
+  class field_canto_NE : base_field
+  {
+  scope = 1;
+  name = "NE of Canto";
+  marker = "site_field_canto_NE";
+  position[] = { 8948.18, 6225.77, 0 };
+  };
+
+  class field_gerenukdesert_SSE : base_field
+  {
+  scope = 1;
+  name = "SSE of Gerenuk Desert";
+  marker = "site_field_gerenukdesert_SSE";
+  position[] = { 3927.34, 4975.52, 0 };
+  };
+
+  class field_aeroportoswontopinley_N : base_field
+  {
+  scope = 1;
+  name = "N of Aeroporto Swonto Pinley";
+  marker = "site_field_aeroportoswontopinley_N";
+  position[] = { 3101.41, 6538.55, 0 };
+  };
+
+  class field_obmeya_WSW : base_field
+  {
+  scope = 1;
+  name = "WSW of Obmeya";
+  marker = "site_field_obmeya_WSW";
+  position[] = { 4645.37, 4367.26, 0 };
+  };
+
+  class field_aeroportokinsellaintl_E : base_field
+  {
+  scope = 1;
+  name = "E of Aeroporto Kinsella Intl.";
+  marker = "site_field_aeroportokinsellaintl_E";
+  position[] = { 4932.92, 2266.63, 0 };
+  };
+
+  class field_suidorraregion_ENE : base_field
+  {
+  scope = 1;
+  name = "ENE of Suidorra Region";
+  marker = "site_field_suidorraregion_ENE";
+  position[] = { 9684.29, 1643.36, 0 };
+  };
+
+  class field_solon_NW : base_field
+  {
+  scope = 1;
+  name = "NW of Solon";
+  marker = "site_field_solon_NW";
+  position[] = { 7745.19, 937.201, 0 };
+  };
 
 };
