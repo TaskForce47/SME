@@ -58,8 +58,8 @@ class Params
 
 	class param_radio_system {
 		title			= "Radio System";
-		values[]	= {0,				1,			2,				999};
-		texts[]		= {"None",	"TFAR",	"ACRE 2",	"DEFAULT - TFAR"};
+		values[]	= {2,					999};
+		texts[]		= {"ACRE 2",	"DEFAULT - ACRE 2"};
 		default		= 999;
 	};
 };

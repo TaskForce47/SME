@@ -17,19 +17,19 @@
  private ["_playerfaction", "_backpackCargo", "_itemCargo", "_magazineCargo", "_weaponCargo"];
  params [];
 
-if !(T8SME_paramT8SME_param_radio_system isEqualTo "None") then {
+if !(T8SME_param_radio_system isEqualTo "None") then {
 
-   switch (getNumber missionConfigFile >> "cfgRandomMissions" >> "missionconfig" >> "playerfaction") do {
+   switch (getNumber (missionConfigFile >> "cfgRandomMissions" >> "missionconfig" >> "playerfaction")) do {
      case 0 : {_playerfaction = "East";};
      case 1 : {_playerfaction = "West";};
      case 2 : {_playerfaction = "Indep";};
      default {_playerfaction = "East";};
    };
 
-   _backpackCargo append (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Backpack");
-   _itemCargo append (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Item");
-   _magazineCargo (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Magazine");
-   _weaponCargo append (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Weapon");
+   _backpackCargo = (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Backpack"));
+   _itemCargo = (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Item"));
+   _magazineCargo = (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Magazine"));
+   _weaponCargo = (getArray ( missionConfigFile >> "cfgRandomMissions" >> "radio_system" >> T8SME_param_radio_system >> _playerfaction >> "Weapon"));
 
    if (( count _backpackCargo	) > 0 ) then { [ missionNamespace, _backpackCargo,		false, true ] call BIS_fnc_addVirtualBackpackCargo; };
    if (( count _itemCargo		) > 0 ) then { [ missionNamespace, _itemCargo,			false, true ] call BIS_fnc_addVirtualItemCargo; };

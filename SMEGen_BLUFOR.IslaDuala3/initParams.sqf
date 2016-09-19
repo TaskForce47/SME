@@ -85,7 +85,7 @@ switch ("param_radio_system" call BIS_fnc_getParamValue) do {
 	case 0 : {T8SME_param_radio_system = "None";};
 	case 1 : {T8SME_param_radio_system = "TFAR";};
 	case 2 : {T8SME_param_radio_system = "ACRE_2";};
-	default {T8SME_param_radio_system = "TFAR";};
+	default {T8SME_param_radio_system = "ACRE_2";};
 };
 // faction used by the players (set in the cfgRandomMissions.hpp)
 T8SME_param_playerFaction	= getNumber ( missionConfigFile >> "cfgRandomMissions" >> "missionConfig" >> "playerFaction" );
