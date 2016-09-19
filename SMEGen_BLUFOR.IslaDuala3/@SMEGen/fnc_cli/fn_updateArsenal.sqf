@@ -3,7 +3,7 @@
 
 	SME.Gen - Small Military Encounter Genenerator
 	CLIENT
-	
+
 	File:		fn_updateArsenal.sqf
 	Author:		T-800a
 	E-Mail:		t-800a@gmx.net
@@ -15,7 +15,7 @@ if !(hasInterface) exitWith {};
 
 #include <..\MACRO.hpp>
 
-private [ "_itemSet" ];
+private [ "_itemSet", "_backpackCargo", "_itemCargo", "_magazineCargo", "_weaponCargo", "_rank", "_radio_system"];
 params [[ "_rank", T8SME_param_playerRewardSet, [""]]];
 
 switch ( _rank ) do

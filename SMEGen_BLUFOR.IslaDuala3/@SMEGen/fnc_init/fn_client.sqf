@@ -29,6 +29,7 @@ waitUntil { !isNil "T8SME_param_INIT" };
 // INIT Arsenal
 [ "INIT" ] call T8SME_client_fnc_updateArsenal;
 
+[] call T8SME_client_fnc_radioinit;
 
 // add key presses
 [] spawn T8SME_client_fnc_keysAdd;
